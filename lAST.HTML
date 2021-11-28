@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+
+
+var todo = [];
+
+function show_List() {
+  for (var i = 0; i < todo.length; i++) {
+    console.log(todo[i]);
+  }
+}
+
+function add_todo_item(new_item) {
+  todo.push(prompt("enter first todo item"));
+  todo.push(prompt("enter second todo item"));
+}
+
+function task_done() {
+  var c = prompt("enter task that is completed");
+
+  if (c == 0) {
+    todo[0] = "learn JS ✓";
+  } else c == 1;
+  {
+    todo[1] = "complete assignments ✓ ";
+  }
+}
+
+function task_edit() {
+  todo[0] = prompt("ENTER 1ST");
+  todo[1] = prompt("ENTER  2ND");
+}
+
+function delete_item() {
+  var i = parseInt(prompt("enter what element to start deletion from"));
+  var j = parseInt(prompt("enter till what element should be deleted"));
+
+  todo.splice(i, j);
+}
+    </Script>
+</body>
+</html>
